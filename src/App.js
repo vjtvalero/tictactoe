@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router';
 import './App.css';
 
-const io = require('socket.io-client');
+import io from 'socket.io-client';
 const socket = io(process.env.REACT_APP_WS_SERVER);
 
 function App() {
